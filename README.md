@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://i.imgur.com/pqTjnLb.png" alt="osTicket logo"/>
+</p>
+
 # 🛠️ Day 3 – Setting Up Shared Resources in Active Directory
 
 As part of the Chicago Bears' new Arlington headquarters IT infrastructure rollout, your task as a System Administrator is to configure shared network resources that will support collaboration between departments. These resources include shared folders for file storage, shared printers, and automated drive mappings. The goal is to ensure that only authorized users have access to specific resources using Active Directory groups and permissions.
@@ -16,7 +20,9 @@ This lab focuses on security, organization, and usability — all critical for e
   
   o	C:\Shares\IT
 
-  https://imgur.com/jebIUl2
+  <p align="center">
+<img src="https://i.imgur.com/jebIUl2.png" alt="osTicket logo"/>
+</p>
   
 •	Configure share permissions:
 
@@ -43,7 +49,9 @@ This lab focuses on security, organization, and usability — all critical for e
 
 •	Open Group Policy Management on the Domain Controller.
 
-https://imgur.com/9b1GmW9
+<p align="center">
+<img src="https://i.imgur.com/9b1GmW9.png" alt="osTicket logo"/>
+</p>
 
 •	Create a new GPO (e.g., Map_HR_Drive) and link it to the department's OU.
 
@@ -51,38 +59,56 @@ https://imgur.com/9b1GmW9
 
   o	User Configuration > Preferences > Windows Settings > Drive Maps
 
-https://imgur.com/0Ix9lj8
+<p align="center">
+<img src="https://i.imgur.com/0Ix9lj8.png" alt="osTicket logo"/>
+</p>
 
 •	Add a New Mapped Drive:
 
-https://imgur.com/FxvnaE3
+<p align="center">
+<img src="https://i.imgur.com/FxvnaE3.png" alt="osTicket logo"/>
+</p>
 
   o	Location: \\FileServerName\HR
 
   o	Drive Letter: C:
 
-https://imgur.com/s6as9fq
+<p align="center">
+<img src="https://i.imgur.com/s6as9fq.png" alt="osTicket logo"/>
+</p>
 
-https://imgur.com/ieiaVKs
+<p align="center">
+<img src="https://i.imgur.com/ieiaVKs.png" alt="osTicket logo"/>
+</p>
 
   o	Label: HR Shared Folder
 
 •	Set targeting to apply only to HR users (using Item-level targeting or group filtering).
 
-https://imgur.com/WG1Cp1B
+<p align="center">
+<img src="https://i.imgur.com/WG1Cp1B.png" alt="osTicket logo"/>
+</p>
 
 #### Step 4: Ensure NTFS Permissions
 Right-click the file Arlington_Heights_Construction_Plan.docx and select Properties.
 
-https://imgur.com/1PaWAJ0
+<p align="center">
+<img src="https://i.imgur.com/1PaWAJ0.png" alt="osTicket logo"/>
+</p>
 
 Go to the Security tab.
+
+<p align="center">
+<img src="https://i.imgur.com/i065ylv.png" alt="osTicket logo"/>
+</p>
 
 Click Edit to modify permissions.
 
 Add the security group (e.g., HR_Group, ConstructionTeam).
 
-https://imgur.com/WG1Cp1B
+<p align="center">
+<img src="https://i.imgur.com/WG1Cp1B.png" alt="osTicket logo"/>
+</p>
 
 Remove "Everyone" if listed and set the appropriate permissions (e.g., Read or Modify).
 
@@ -95,11 +121,15 @@ Go to the Sharing tab and click Advanced Sharing.
 
 Check Share this folder.
 
-https://imgur.com/siMvEbB
+<p align="center">
+<img src="https://i.imgur.com/siMvEbB.png" alt="osTicket logo"/>
+</p>
 
 Test permissons for Operation.
 
-https://imgur.com/4WXIjaK
+<p align="center">
+<img src="https://i.imgur.com/4WXIjaK.png" alt="osTicket logo"/>
+</p>
 
 #### Step 6: Access the Shared File from a Client
 On a client PC, log in as a member of the security group that has been granted access.
@@ -107,10 +137,6 @@ On a client PC, log in as a member of the security group that has been granted a
 Open File Explorer.
 
 Access the shared file using the mapped drive (e.g., H:\Arlington_Heights_Construction_Plan.docx).
-
-Alternatively, you can use the UNC path: \\fileserver\HR\Arlington_Heights_Construction_Plan.docx
-
-
 
 ### 💻 Tech Stack
 
@@ -139,3 +165,5 @@ Optional: PowerShell	Automation and scripting
 ✅ Validate that access control works based on AD security groups
 
 ✅ Establish a clean and secure resource-sharing structure for the new HQ
+
+✅ Test Permissions
