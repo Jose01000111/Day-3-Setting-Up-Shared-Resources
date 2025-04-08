@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/pqTjnLb.png" alt="osTicket logo"/>
 </p>
 
-# 🛠️ Day 3 – Setting Up Shared Resources in Active Directory
+### 🛠️ Day 3 – Setting Up Shared Resources in Active Directory
 
 As part of the Chicago Bears' new Arlington headquarters IT infrastructure rollout, your task as a System Administrator is to configure shared network resources that will support collaboration between departments. These resources include shared folders for file storage, shared printers, and automated drive mappings. The goal is to ensure that only authorized users have access to specific resources using Active Directory groups and permissions.
 This lab focuses on security, organization, and usability — all critical for enterprise environments.
