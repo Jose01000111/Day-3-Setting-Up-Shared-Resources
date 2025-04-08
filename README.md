@@ -15,6 +15,8 @@ This lab focuses on security, organization, and usability — all critical for e
   o	C:\Shares\HR
   
   o	C:\Shares\IT
+
+  https://imgur.com/jebIUl2
   
 •	Configure share permissions:
 
@@ -41,36 +43,38 @@ This lab focuses on security, organization, and usability — all critical for e
 
 •	Open Group Policy Management on the Domain Controller.
 
+https://imgur.com/9b1GmW9
+
 •	Create a new GPO (e.g., Map_HR_Drive) and link it to the department's OU.
 
 •	Go to:
 
   o	User Configuration > Preferences > Windows Settings > Drive Maps
 
+https://imgur.com/0Ix9lj8
+
 •	Add a New Mapped Drive:
+
+https://imgur.com/FxvnaE3
 
   o	Location: \\FileServerName\HR
 
-  o	Drive Letter: H:
+  o	Drive Letter: C:
+
+https://imgur.com/s6as9fq
+
+https://imgur.com/ieiaVKs
 
   o	Label: HR Shared Folder
 
 •	Set targeting to apply only to HR users (using Item-level targeting or group filtering).
 
-#### 4. Test Access
+https://imgur.com/WG1Cp1B
 
-•	Log in with a test account from each department.
-
-•	Confirm:
-
-  o	Correct network drive mapping.
-  
-  o	Proper folder access (can’t access other departments).
-  
-  o	Optional: printer is visible if assigned.
-
-#### Step 5: Ensure NTFS Permissions
+#### Step 4: Ensure NTFS Permissions
 Right-click the file Arlington_Heights_Construction_Plan.docx and select Properties.
+
+https://imgur.com/1PaWAJ0
 
 Go to the Security tab.
 
@@ -78,20 +82,26 @@ Click Edit to modify permissions.
 
 Add the security group (e.g., HR_Group, ConstructionTeam).
 
+https://imgur.com/WG1Cp1B
+
 Remove "Everyone" if listed and set the appropriate permissions (e.g., Read or Modify).
 
 Click Apply, then OK.
 
-#### Step 6: Set Folder-Level Sharing Permissions
+#### Step 5: Set Folder-Level Sharing Permissions
 Right-click the folder (e.g., C:\Shared\HR) > Properties.
 
 Go to the Sharing tab and click Advanced Sharing.
 
 Check Share this folder.
 
-Set permissions for the specific security group (add it if not already listed).
+https://imgur.com/siMvEbB
 
-#### Step 7: Access the Shared File from a Client
+Test permissons for Operation.
+
+https://imgur.com/4WXIjaK
+
+#### Step 6: Access the Shared File from a Client
 On a client PC, log in as a member of the security group that has been granted access.
 
 Open File Explorer.
