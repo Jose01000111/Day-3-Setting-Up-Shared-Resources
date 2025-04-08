@@ -69,6 +69,39 @@ This lab focuses on security, organization, and usability — all critical for e
   
   o	Optional: printer is visible if assigned.
 
+#### Step 5: Ensure NTFS Permissions
+Right-click the file Arlington_Heights_Construction_Plan.docx and select Properties.
+
+Go to the Security tab.
+
+Click Edit to modify permissions.
+
+Add the security group (e.g., HR_Group, ConstructionTeam).
+
+Remove "Everyone" if listed and set the appropriate permissions (e.g., Read or Modify).
+
+Click Apply, then OK.
+
+#### Step 6: Set Folder-Level Sharing Permissions
+Right-click the folder (e.g., C:\Shared\HR) > Properties.
+
+Go to the Sharing tab and click Advanced Sharing.
+
+Check Share this folder.
+
+Set permissions for the specific security group (add it if not already listed).
+
+#### Step 7: Access the Shared File from a Client
+On a client PC, log in as a member of the security group that has been granted access.
+
+Open File Explorer.
+
+Access the shared file using the mapped drive (e.g., H:\Arlington_Heights_Construction_Plan.docx).
+
+Alternatively, you can use the UNC path: \\fileserver\HR\Arlington_Heights_Construction_Plan.docx
+
+
+
 ### 💻 Tech Stack
 
 Windows Server (2019+)	File & Print Server, Active Directory host
