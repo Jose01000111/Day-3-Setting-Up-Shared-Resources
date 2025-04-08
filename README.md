@@ -20,8 +20,8 @@ This lab focuses on security, organization, and usability — all critical for e
   
   o	C:\Shares\IT
 
-  <p align="center">
-<img src="https://i.imgur.com/jebIUl2.png" alt="osTicket logo"/>
+   <p align="center">
+<img src="https://i.imgur.com/s6as9fq.png" alt="osTicket logo"/>
 </p>
   
 •	Configure share permissions:
@@ -29,6 +29,11 @@ This lab focuses on security, organization, and usability — all critical for e
   o	Share each folder with its respective AD security group.
   
   o	Allow “Full Control” to department groups only.
+  
+  <p align="center">
+<img src="https://i.imgur.com/jebIUl2.png" alt="osTicket logo"/>
+</p>
+  
   
 •	Set NTFS permissions:
 
