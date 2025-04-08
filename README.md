@@ -9,7 +9,7 @@ With staff accounts active, team leads began requesting shared folders and print
 I created shared folders, configured NTFS and share permissions, deployed network printers, and used Group Policy Objects (GPOs) to automate access and drive mappings. (Used ChatGPT to confirm GPO best practices and avoid inheritance issues.)
 
 ### 🧪 Lab Tasks
-#### 1. Create Department Shared Folders
+#### 1. Create Department Shared 📂 Folders
 
 •	Log into the file server with a domain admin account.
 
@@ -44,12 +44,12 @@ I created shared folders, configured NTFS and share permissions, deployed networ
   
   o	Apply Modify or Read rights as needed.
 
-#### 2. Set Up Shared Printers (Optional but recommended)
+#### 2. Set Up Shared 🖨️ Printers (Optional but recommended)
 •	Install or add a network printer to the file server.
 
 •	Set permissions to allow specific department security groups only.
 
-#### 3. Map Network Drives Using GPO
+#### 3. Map 🌐 Network Drives Using GPO
 
 •	Open Group Policy Management on the Domain Controller.
 
@@ -89,7 +89,7 @@ I created shared folders, configured NTFS and share permissions, deployed networ
 
 •	Set targeting to apply only to HR users (using Item-level targeting or group filtering).
 
-#### Step 4: Ensure NTFS Permissions
+#### Step 4: Ensure 📂 NTFS Permissions
 Right-click the file Arlington_Heights_Construction_Plan.docx and select Properties.
 
 <p align="center">
@@ -114,7 +114,7 @@ Remove "Everyone" if listed and set the appropriate permissions (e.g., Read or M
 
 Click Apply, then OK.
 
-#### Step 5: Set Folder-Level Sharing Permissions
+#### Step 5: Set 📂 Folder-Level Sharing Permissions
 Right-click the folder (e.g., C:\Shared\HR) > Properties.
 
 Go to the Sharing tab and click Advanced Sharing.
@@ -131,7 +131,7 @@ Test permissons for Operation.
 <img src="https://i.imgur.com/4WXIjaK.png" alt="osTicket logo"/>
 </p>
 
-#### Step 6: Access the Shared File from a Client
+#### Step 6: Access the Shared 📂 File from a Client
 On a client PC, log in as a member of the security group that has been granted access.
 
 Open File Explorer.
