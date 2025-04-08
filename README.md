@@ -41,8 +41,6 @@ This lab focuses on security, organization, and usability — all critical for e
 #### 2. Set Up Shared Printers (Optional but recommended)
 •	Install or add a network printer to the file server.
 
-•	Right-click printer > Properties > Sharing tab > Share the printer.
-
 •	Set permissions to allow specific department security groups only.
 
 #### 3. Map Network Drives Using GPO
