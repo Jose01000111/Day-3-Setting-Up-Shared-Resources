@@ -85,10 +85,6 @@ This lab focuses on security, organization, and usability — all critical for e
 
 •	Set targeting to apply only to HR users (using Item-level targeting or group filtering).
 
-<p align="center">
-<img src="https://i.imgur.com/WG1Cp1B.png" alt="osTicket logo"/>
-</p>
-
 #### Step 4: Ensure NTFS Permissions
 Right-click the file Arlington_Heights_Construction_Plan.docx and select Properties.
 
