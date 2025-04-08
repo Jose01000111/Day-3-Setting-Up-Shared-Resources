@@ -139,30 +139,26 @@ Access the shared file using the mapped drive (e.g., H:\Arlington_Heights_Constr
 
 ### 💻 Tech Stack
 
-Windows Server (2019+)	File & Print Server, Active Directory host
+#### Windows Server (2019+)	File & Print Server, Active Directory host
 
-Active Directory (AD)	User & Group Management
+#### Active Directory (AD)	User & Group Management
 
-Group Policy (GPO)	Network drive mapping, resource access
+#### Group Policy (GPO)	Network drive mapping, resource access
 
-NTFS & Share Permissions	File-level and network-level access control
-
-SMB (Server Message Block)	Network file sharing protocol
-
-Optional: PowerShell	Automation and scripting
+#### NTFS & Share Permissions	File-level and network-level access control
 
 ### 🧾 Summary of Lab Goals
 
-✅ Create and secure shared folders for each department
+#### ✅ Create and secure shared folders for each department
 
-✅ Ensure proper permissions are applied via NTFS and share settings
+#### ✅ Ensure proper permissions are applied via NTFS and share settings
 
-✅ Use GPO to automate drive mapping for users
+#### ✅ Use GPO to automate drive mapping for users
 
-✅ (Optional) Share and secure department printers
+#### ✅ (Optional) Share and secure department printers
 
-✅ Validate that access control works based on AD security groups
+#### ✅ Validate that access control works based on AD security groups
 
-✅ Establish a clean and secure resource-sharing structure for the new HQ
+#### ✅ Establish a clean and secure resource-sharing structure for the new HQ
 
-✅ Test Permissions
+#### ✅ Test Permissions
