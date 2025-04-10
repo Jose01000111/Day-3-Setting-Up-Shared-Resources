@@ -138,7 +138,7 @@ Open File Explorer.
 
 Access the shared file using the mapped drive (e.g., H:\Arlington_Heights_Construction_Plan.docx).
 
-### 💻 Tech Stack
+### 💻 Technology Stack
 
 #### Windows Server (2019+)	File & Print Server, Active Directory host
 
@@ -148,7 +148,7 @@ Access the shared file using the mapped drive (e.g., H:\Arlington_Heights_Constr
 
 #### NTFS & Share Permissions	File-level and network-level access control
 
-### 🧾 Summary of Lab Goals
+### 🎯 Goals Accomplished
 
 #### ✅ Create and secure shared folders for each department
 
