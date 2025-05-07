@@ -10,72 +10,33 @@ I created shared folders, configured NTFS and share permissions, deployed networ
 
 ### 🧪 Lab Tasks
 #### 1. Create Department Shared 📂 Folders
-
-•	Log into the file server with a domain admin account.
-
-•	Create shared folders:
-
-  o	C:\Shares\Admin
-  
-  o	C:\Shares\HR
-  
-  o	C:\Shares\IT
+I start by logging into the file server with a domain admin account. Then, I create shared folders for each department (Admin, HR, and IT) under C:\Shares\. After that, I set share permissions, giving each folder access to the respective AD security group with "Full Control" for the department's group only. I also remove "Everyone" from NTFS permissions and add the appropriate department group, applying "Modify" or "Read" rights as needed.
 
    <p align="center">
 <img src="https://i.imgur.com/s6as9fq.png" alt="osTicket logo"/>
 </p>
   
-•	Configure share permissions:
-
-  o	Share each folder with its respective AD security group.
-  
-  o	Allow “Full Control” to department groups only.
-  
   <p align="center">
 <img src="https://i.imgur.com/jebIUl2.png" alt="osTicket logo"/>
 </p>
-  
-  
-•	Set NTFS permissions:
-
-  o	Remove "Everyone"
-  
-  o	Add the appropriate department security group.
-  
-  o	Apply Modify or Read rights as needed.
 
 #### 2. Set Up Shared 🖨️ Printers (Optional but recommended)
-•	Install or add a network printer to the file server.
-
-•	Set permissions to allow specific department security groups only.
+Next, I install or add a network printer to the file server. I configure the permissions to allow only specific department security groups to access the printer, ensuring each department has dedicated printer access.
 
 #### 3. Map 🌐 Network Drives Using GPO
-
-•	Open Group Policy Management on the Domain Controller.
+I open Group Policy Management on the Domain Controller and create a new GPO (e.g., Map_HR_Drive) for the HR department. I navigate to User Configuration > Preferences > Windows Settings > Drive Maps and add a new mapped drive with the location \\FileServerName\HR and the drive letter C:. I set targeting to apply this mapping only to HR users using Item-level targeting or group filtering.
 
 <p align="center">
 <img src="https://i.imgur.com/9b1GmW9.png" alt="osTicket logo"/>
 </p>
 
-•	Create a new GPO (e.g., Map_HR_Drive) and link it to the department's OU.
-
-•	Go to:
-
-  o	User Configuration > Preferences > Windows Settings > Drive Maps
-
 <p align="center">
 <img src="https://i.imgur.com/0Ix9lj8.png" alt="osTicket logo"/>
 </p>
 
-•	Add a New Mapped Drive:
-
 <p align="center">
 <img src="https://i.imgur.com/FxvnaE3.png" alt="osTicket logo"/>
 </p>
-
-  o	Location: \\FileServerName\HR
-
-  o	Drive Letter: C:
 
 <p align="center">
 <img src="https://i.imgur.com/s6as9fq.png" alt="osTicket logo"/>
@@ -85,47 +46,27 @@ I created shared folders, configured NTFS and share permissions, deployed networ
 <img src="https://i.imgur.com/ieiaVKs.png" alt="osTicket logo"/>
 </p>
 
-  o	Label: HR Shared Folder
-
-•	Set targeting to apply only to HR users (using Item-level targeting or group filtering).
-
 #### Step 4: Ensure 📂 NTFS Permissions
-Right-click the file Arlington_Heights_Construction_Plan.docx and select Properties.
+For files like Arlington_Heights_Construction_Plan.docx, I right-click and go to Properties > Security. I click "Edit" to add the correct security groups (e.g., HR_Group, ConstructionTeam), remove "Everyone," and set permissions to "Read" or "Modify" as needed.
 
 <p align="center">
 <img src="https://i.imgur.com/1PaWAJ0.png" alt="osTicket logo"/>
 </p>
 
-Go to the Security tab.
-
 <p align="center">
 <img src="https://i.imgur.com/i065ylv.png" alt="osTicket logo"/>
 </p>
-
-Click Edit to modify permissions.
-
-Add the security group (e.g., HR_Group, ConstructionTeam).
 
 <p align="center">
 <img src="https://i.imgur.com/WG1Cp1B.png" alt="osTicket logo"/>
 </p>
 
-Remove "Everyone" if listed and set the appropriate permissions (e.g., Read or Modify).
-
-Click Apply, then OK.
-
 #### Step 5: Set 📂 Folder-Level Sharing Permissions
-Right-click the folder (e.g., C:\Shared\HR) > Properties.
-
-Go to the Sharing tab and click Advanced Sharing.
-
-Check Share this folder.
+I right-click the folder (e.g., C:\Shared\HR), go to Properties > Sharing tab, and select "Advanced Sharing." I check "Share this folder" and test the permissions to ensure only the correct department users can access it.
 
 <p align="center">
 <img src="https://i.imgur.com/siMvEbB.png" alt="osTicket logo"/>
 </p>
-
-Test permissons for Operation.
 
 <p align="center">
 <img src="https://i.imgur.com/4WXIjaK.png" alt="osTicket logo"/>
