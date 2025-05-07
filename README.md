@@ -15,7 +15,9 @@ I start by logging into the file server with a domain admin account. Then, I cre
    <p align="center">
 <img src="https://i.imgur.com/s6as9fq.png" alt="osTicket logo"/>
 </p>
-  
+
+***
+
   <p align="center">
 <img src="https://i.imgur.com/jebIUl2.png" alt="osTicket logo"/>
 </p>
@@ -30,21 +32,33 @@ I open Group Policy Management on the Domain Controller and create a new GPO (e.
 <img src="https://i.imgur.com/9b1GmW9.png" alt="osTicket logo"/>
 </p>
 
+***
+
 <p align="center">
 <img src="https://i.imgur.com/0Ix9lj8.png" alt="osTicket logo"/>
 </p>
+
+***
 
 <p align="center">
 <img src="https://i.imgur.com/FxvnaE3.png" alt="osTicket logo"/>
 </p>
 
+***
+
 <p align="center">
 <img src="https://i.imgur.com/s6as9fq.png" alt="osTicket logo"/>
 </p>
 
+***
+
+
 <p align="center">
 <img src="https://i.imgur.com/ieiaVKs.png" alt="osTicket logo"/>
 </p>
+
+***
+
 
 #### Step 4: Ensure 📂 NTFS Permissions
 For files like Arlington_Heights_Construction_Plan.docx, I right-click and go to Properties > Security. I click "Edit" to add the correct security groups (e.g., HR_Group, ConstructionTeam), remove "Everyone," and set permissions to "Read" or "Modify" as needed.
@@ -53,13 +67,19 @@ For files like Arlington_Heights_Construction_Plan.docx, I right-click and go to
 <img src="https://i.imgur.com/1PaWAJ0.png" alt="osTicket logo"/>
 </p>
 
+***
+
 <p align="center">
 <img src="https://i.imgur.com/i065ylv.png" alt="osTicket logo"/>
 </p>
 
+***
+
 <p align="center">
 <img src="https://i.imgur.com/WG1Cp1B.png" alt="osTicket logo"/>
 </p>
+
+***
 
 #### Step 5: Set 📂 Folder-Level Sharing Permissions
 I right-click the folder (e.g., C:\Shared\HR), go to Properties > Sharing tab, and select "Advanced Sharing." I check "Share this folder" and test the permissions to ensure only the correct department users can access it.
@@ -68,16 +88,13 @@ I right-click the folder (e.g., C:\Shared\HR), go to Properties > Sharing tab, a
 <img src="https://i.imgur.com/siMvEbB.png" alt="osTicket logo"/>
 </p>
 
+***
+
 <p align="center">
 <img src="https://i.imgur.com/4WXIjaK.png" alt="osTicket logo"/>
 </p>
 
-#### Step 6: Access the Shared 📂 File from a Client
-On a client PC, log in as a member of the security group that has been granted access.
-
-Open File Explorer.
-
-Access the shared file using the mapped drive (e.g., H:\Arlington_Heights_Construction_Plan.docx).
+***
 
 ### 💻 Technology Stack
 
